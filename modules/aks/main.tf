@@ -1,10 +1,10 @@
 # AKS Module
 resource "azurerm_kubernetes_cluster" "aks_cluster" {
-  name                = var.cluster_name
-  location            = var.rg_location
-  resource_group_name = var.rg_name
-  http_application_routing_enabled = var.http_application_routing_enabled
-  dns_prefix          = var.cluster_name
+  name                              = var.cluster_name
+  location                          = var.rg_location
+  resource_group_name               = var.rg_name
+  http_application_routing_enabled  = var.http_application_routing_enabled
+  dns_prefix                        = var.cluster_name
   role_based_access_control_enabled = var.role_based_access_control_enabled
 
 

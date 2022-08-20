@@ -11,7 +11,7 @@ resource "azurerm_resource_group" "shared_rg" {
 # Managed Kubernetes Service (AKS)
 
 # Staging cluster
-module "aks_stagting" {
+module "aks_staging" {
   source = "./modules/aks"
   node_count = var.node_count
   rg_location = azurerm_resource_group.rg.location
